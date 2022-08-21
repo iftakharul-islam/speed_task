@@ -69,7 +69,6 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `username` varchar(20) NOT NULL,
   `password` varchar(128) NOT NULL,
-  `created_at` date NOT NULL DEFAULT current_timestamp(),
   `data-status` int(11) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -77,10 +76,10 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `created_at`, `data-status`) VALUES
-(1, 'Ifat', '12345', '2022-08-19', 1),
-(2, 'Azhar', '12345', '2022-08-19', 1),
-(3, 'Manik', 'ewrwer', '2022-08-19', 1);
+INSERT INTO `users` (`id`, `username`, `password`,  `data-status`) VALUES
+(1, 'Ifat', '12345',  1),
+(2, 'Azhar', '12345',  1),
+(3, 'Manik', 'ewrwer',  1);
 
 --
 -- Indexes for dumped tables
