@@ -79,7 +79,7 @@ function saveData() {
                     $("#form")[0].reset();
                     alertMsg("Save Success", 'success');
                     loadGrid();
-                    modal.style.display = "none";
+                    modal.css('display',"none");
                 } else if (len > 0) {
                     alertMsg("Save failed", 'error');
                 }
@@ -258,9 +258,9 @@ function SearchGrid() {
     });
 }
 
-var modal = document.getElementById("myModal");
+var modal = $("#myModal");
 
-        var span = document.getElementsByClassName("close")[0];
+        var span = $(".close");
 
         // When the user clicks the button, open the modal 
 
@@ -269,13 +269,13 @@ var modal = document.getElementById("myModal");
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
-            modal.style.display = "none";
+            modal.css('display', "none");
         }
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
             if (event.target == modal) {
-                modal.style.display = "none";
+                modal.css('display', "none");
             }
         }
 
@@ -357,7 +357,7 @@ var modal = document.getElementById("myModal");
                         loadOptions(".options", jsonData[0]['entry_by']);
 
 
-                        modal.style.display = "block";
+                        modal.css('display', "block");
                     }
 
                 },
