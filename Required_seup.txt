@@ -1,0 +1,13 @@
+
+-- phpMyAdmin SQL -- version 5.2.0
+-- Host: 127.0.0.1
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
+
+Import The Sql File on your system use phpmyadmin or any externel client
+Change DB HOST,PORT,USER,PASSWORD,etc if needed
+change the url of app.js if directory dosen't match 
+
+
+please give your valuable feedback 
+Email : iftakharulislam881@gmail.com
